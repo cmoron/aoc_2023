@@ -17,7 +17,7 @@ total_1 = 0
 total_2 = 0
 
 filename = sys.argv[1]
-with open(filename, 'r') as file:
+with open(filename, 'r', encoding='utf-8') as file:
 
     for line in file:
 
