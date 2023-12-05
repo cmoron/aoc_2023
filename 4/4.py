@@ -16,7 +16,6 @@ with open(FILE_NAME, 'r', encoding='utf-8') as file:
         cards[card_id] = {'copies': 1, 'score': score, 'winning': winning, 'numbers': numbers}
         total_score += math.trunc(pow(2, score -1))
 
-
     for card_id, card in cards.items():
         range_start = card_id + 1
         range_end = range_start + card['score']
